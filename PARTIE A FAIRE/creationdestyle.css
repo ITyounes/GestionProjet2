@@ -1,0 +1,46 @@
+
+.logo-cigar-coffee span {
+    position: relative;
+    margin-left: 70px;
+    font-size: 1.2rem;
+    
+    background: linear-gradient(
+        -45deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.8) 50%,
+        transparent 60%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: background-position 0s;
+}
+
+
+.logo-cigar-coffee:hover span {
+    animation: shine 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+.logo-cigar-coffee:hover::before {
+    box-shadow:
+        inset 0 2px 3px rgba(0,0,0,0.5),
+        4px 0 0 #555,
+        6px 0 20px #ff2a00; 
+    transition: box-shadow 0.3s ease;
+}
+
+
+.logo-cigar-coffee:hover::after {
+    animation: smokeDrift 1.5s infinite linear;
+}
