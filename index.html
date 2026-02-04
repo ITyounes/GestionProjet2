@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Héritage du Tabac | Boutique Premium</title>
+    <style>
+        :root {
+            --navy: #1A2238;
+            --gold: #D4AF37;
+            --cream: #F5F5DC;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: var(--cream);
+            color: var(--text);
+        }
+
+        /* Hero Section */
+        header {
+            background-color: var(--navy);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; color: var(--gold); }
+        p.subtitle { font-style: italic; font-size: 1.2rem; }
+
+        /* Grille Produits */
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { color: var(--navy); }
+        
+        .btn {
+            background-color: var(--gold);
+            color: var(--navy);
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        /* Bandeau Légal */
+        .health-warning {
+            background-color: white;
+            border: 5px solid black;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 40px 0;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background-color: #eee;
+            padding: 40px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>L'HÉRITAGE DU TABAC</h1>
+        <p class="subtitle">Sélection de traditions et d'arômes d'exception.</p>
+        <a href="#shop" class="btn">DÉCOUVRIR LA COLLECTION</a>
+    </header>
+
+    <div class="container">
+        <div class="health-warning">
+            FUMER TUE. ARRÊTER DE FUMER EST ESSENTIEL POUR VOTRE SANTÉ.
+        </div>
+
+        <h2 style="text-align: center; color: var(--navy);">Nos Sélections Premium</h2>
+        <div class="grid" id="shop">
+            <div class="card">
+                <h3>Le Classique Or</h3>
+                <p>Équilibre parfait entre force et douceur.</p>
+                <div class="btn">Voir le prix</div>
+            </div>
+            <div class="card">
+                <h3>Le Pur Sombre</h3>
+                <p>Un tabac de caractère sans additifs.</p>
+                <div class="btn">Voir le prix</div>
+            </div>
+            <div class="card">
+                <h3>L'Artisanal</h3>
+                <p>Tabac à rouler d'origine contrôlée.</p>
+                <div class="btn">Voir le prix</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 L'Héritage du Tabac. Vente interdite aux mineurs.</p>
+        <p>Conformément à la réglementation en vigueur, ce site est réservé aux adultes consentants.</p>
+    </footer>
+
+</body>
+</html>
