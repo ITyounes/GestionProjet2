@@ -1,1 +1,279 @@
+</style>
+        :root {
 
+            --bg-black: #0a0a0a;
+
+            --dark-brown: #1a1512;
+
+            --gold: #c5a059;
+
+            --gold-dim: #8d6e3e;
+
+            --text-cream: #f5e6d3;
+
+        }
+
+
+        body {
+
+            background-color: var(--bg-black);
+
+            color: var(--text-cream);
+
+            font-family: 'Inter', sans-serif;
+
+            margin: 0;
+
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+
+        /* --- NAVIGATION --- */
+
+        .navbar {
+
+            background: rgba(10, 10, 10, 0.98);
+
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            padding: 0 5%;
+
+        }
+
+
+        .nav-container {
+
+            max-width: 1400px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            height: 80px;
+
+        }
+
+
+        /* Logo avec effet cigare illuminé */
+
+        .nav-logo {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 1.5rem;
+
+            color: var(--text-cream);
+
+            text-decoration: none;
+
+            letter-spacing: 2px;
+
+            position: relative;
+
+        }
+
+
+        .nav-logo span { color: var(--gold); font-weight: bold; font-style: italic; }
+
+
+        /* --- MENU PRINCIPAL --- */
+
+        .nav-menu {
+
+            display: flex;
+
+            list-style: none;
+
+            gap: 30px;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+        .nav-menu li { position: relative; }
+
+
+        .nav-menu a {
+
+            color: var(--text-cream);
+
+            text-decoration: none;
+
+            font-size: 0.85rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .nav-menu a:hover { color: var(--gold); }
+
+
+        /* --- DROPDOWNS (Menus Déroulants) --- */
+
+        .dropdown-menu {
+
+            position: absolute;
+
+            top: 100%;
+
+            left: 0;
+
+            background: var(--dark-brown);
+
+            min-width: 200px;
+
+            list-style: none;
+
+            padding: 15px 0;
+
+            display: none; /* Caché par défaut */
+
+            border: 1px solid rgba(197, 160, 89, 0.2);
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+        }
+
+
+        .dropdown:hover .dropdown-menu { display: block; }
+
+
+        .dropdown-menu li a {
+
+            padding: 10px 20px;
+
+            display: block;
+
+            text-transform: none;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .dropdown-menu li a:hover {
+
+            background: rgba(197, 160, 89, 0.1);
+
+        }
+
+
+        /* --- ICONES --- */
+
+        .nav-icons {
+
+            display: flex;
+
+            gap: 20px;
+
+            align-items: center;
+
+        }
+
+
+        .nav-icons a {
+
+            color: var(--text-cream);
+
+            font-size: 1.1rem;
+
+            transition: 0.3s;
+
+        }
+
+
+        .nav-icons a:hover { color: var(--gold); transform: scale(1.1); }
+
+
+        /* --- HERO SECTION --- */
+
+        .hero-bar {
+
+            height: 70vh;
+
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+
+                        url('https://images.unsplash.com/photo-1541802645635-11f2286a7482?auto=format&fit=crop&q=80&w=1600');
+
+            background-size: cover;
+
+            background-position: center;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+        .hero-content h1 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+            margin: 10px 0;
+
+        }
+
+
+        .tag { color: var(--gold); letter-spacing: 5px; text-transform: uppercase; font-size: 0.8rem; }
+
+
+        .btn-gold {
+
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 15px 40px;
+
+            border: 1px solid var(--gold);
+
+            color: var(--gold);
+
+            text-decoration: none;
+
+            text-transform: uppercase;
+
+            font-size: 0.8rem;
+
+            letter-spacing: 2px;
+
+            transition: 0.4s;
+
+        }
+
+        .btn-gold:hover {
+
+            background: var(--gold);
+
+            color: #000;
+
+            box-shadow: 0 0 20px rgba(197,160,89,0.4);
+
+        }
+</style>
