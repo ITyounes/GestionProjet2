@@ -1,0 +1,75 @@
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-note">
+      <strong>18+</strong> — Vente interdite aux mineurs. Le tabac nuit gravement à la santé.
+    </p>
+
+    <nav class="footer-nav" aria-label="Liens légaux">
+      <a href="/mentions-legales">Mentions légales</a>
+      <a href="/conditions-generales">Conditions générales</a>
+      <a href="/confidentialite">Confidentialité</a>
+      <a href="/politique-age">Politique d’âge</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <p class="footer-copy">© <span id="y"></span> Cigar'Coffee</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+<style>
+  .footer{
+    margin-top: 40px;
+    background:#151515;
+    color:#d7d7d7;
+    border-top:1px solid rgba(255,255,255,.08);
+  }
+
+  .footer-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 16px;
+    display: grid;
+    gap: 10px;
+
+    /* ✅ centrage */
+    text-align: center;
+    justify-items: center;
+  }
+
+  .footer-note{
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.35;
+    color:#f1f1f1;
+    opacity: .9;
+  }
+
+  .footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* ✅ centre les liens */
+    justify-content: center;
+    gap: 10px 14px;
+
+    font-size: 14px;
+  }
+
+  .footer-nav a{
+    color:#d7d7d7;
+    text-decoration:none;
+  }
+  .footer-nav a:hover{
+    text-decoration: underline;
+  }
+
+  .footer-copy{
+    margin: 0;
+    font-size: 12px;
+    opacity: .75;
+  }
+</style>
