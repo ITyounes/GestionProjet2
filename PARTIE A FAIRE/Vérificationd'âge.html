@@ -1,1 +1,36 @@
+<div id="age-modal" class="age-gate-overlay">
+    <div class="age-gate-box">
+        <h2>Vérification d'identité requise</h2>
+        <p class="age-gate-text">La législation nous impose de vérifier votre majorité.</p>
+        
+        <div id="step-1">
+            <p class="age-gate-subtext">Veuillez importer une photo de votre pièce d'identité (CNI, Passeport, Permis).</p>
+            
+            <div class="upload-container">
+                <input type="file" id="id-card-upload" accept="image/*" style="display: none;">
+                <label for="id-card-upload" class="upload-btn">
+                    📷 Importer ma pièce d'identité
+                </label>
+                <p id="file-name" style="font-size: 12px; margin-top: 10px; color: #666; font-style: italic;"></p>
+            </div>
 
+            <div class="age-gate-buttons">
+                <button id="btn-verify" class="age-btn primary" disabled>Vérifier mon document</button>
+            </div>
+            <br>
+            <button id="btn-non" style="background:none; border:none; color:#999; text-decoration:underline; cursor:pointer;">Je suis mineur, quitter le site</button>
+        </div>
+
+        <div id="step-loading" style="display:none;">
+            <div class="spinner"></div>
+            <p>Analyse du document en cours...</p>
+        </div>
+
+        <div id="step-success" style="display:none;">
+            <div style="font-size: 50px; color: green;">✔</div>
+            <p style="font-weight: bold;">Âge vérifié avec succès.</p>
+            <p>Redirection en cours...</p>
+        </div>
+
+    </div>
+</div>
